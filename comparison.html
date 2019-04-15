@@ -16,7 +16,7 @@
 <nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">LATITUDE</a>
+      <a class="navbar-brand" href="#">LATITUDE</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
@@ -34,32 +34,27 @@
     </ul>
   </div>
 </nav>
-<div class=container-fluid>
-<div class="row">
-<div class="col-7 col-md-7">
-  <h1>Summary: Latitude vs X</h1>
-  <p>Click any plot on the right to get in-depth analysis</p>
-  <hr>
-  <img src="one.png" width=45% class="responsive pull-left">
-  <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.  To Accomplish this analysis, we first pulled data from the OpenWeatherMap API to Assemble a dataset on over 500 cities.</p>
-  <br>
-  <p> After assembling the dataset, we used Matplotlib to plot various aspects of the eather vs. latitude.  Factors we looked at included temprature, cloudiness, wind speed and humidity.  This site provides the source data and Vizualizations created as part of the analyusis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-<br>
-</p>
-<li>Max Temperature (F) vs. Latitude</li>
-<li>Humidity (%) vs. Latitude</li>
-<li>Cloudiness (%) vs. Latitude</li>
-<li>Wind Speed (mph) vs. Latitude</li>
-</p>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+<h1>Comparison: Latitude vs X</h1>
+<p>Click any plot to get in-depth analysis</p>
+<div class="grid-container">
+  <div class="grid-item"><a href="temp.html"><h3> vs. Temperature</h3><img src="one.png"  width=60% class="responsive"></a></div>
+  <div class="grid-item"><a href="humid.html"><h3>vs. Humidity</h3><img src="two.png"  width=60% class="responsive"></a></div>
+  <div class="grid-item"><a href="cloud.html"><h3>vs. Cloudiness</h3><img src="three.png"  width=60% class="responsive"></a></div>  
+  <div class="grid-item"><a href="wind.html"><h3>vs. WindSpeed</h3><img src="four.png"  width=60% class="responsive"></a></div>
   </div>
-  <div class="col-5 col-md-5">
-	<h3> Vizualizations </h3>
-	<a href="temp.html"><img src="one.png" width=45% class="responsive gap-right gap-below"></a>
-    <a href="humid.html"><img src="two.png" width=45% class="responsive gap-below"></a>
-    <a href="cloud.html"><img src="three.png" width=45% class="responsive gap-right"></a>
-    <a href="wind.html"><img src="four.png" width=45% class="responsive"></a>
-		</div>
-</div>
-</div>
 </body>
 </html>
